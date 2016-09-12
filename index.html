@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="scoreCard">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/mainStyle.css" media="screen" title="no title">
+    <link rel="stylesheet" href="/css/reset.css" media="screen" title="no title">
+    <title>Score Card</title>
+  </head>
+  <body id="body">
+    <header class="header-wrapper bubble">
+      <div class="welcome">
+        Score Card
+      </div>
+      <div class="menu">
+        <img class="ham" src="./image/ham.png" alt="" />
+      </div>
+    </header>
+
+
+        <ui-view></ui-view>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+    <script src="./apps.js" charset="utf-8"></script>
+    <script src="./home/homeCtrl.js" charset="utf-8"></script>
+    <script src="./directive.js" charset="utf-8"></script>
+    <script src="./player1/player1Ctrl.js" charset="utf-8"></script>
+    <script src="./player2/player2Ctrl.js" charset="utf-8"></script>
+    <script src="./player3/player3Ctrl.js" charset="utf-8"></script>
+    <script src="./player4/player4Ctrl.js" charset="utf-8"></script>
+  </body>
+</html>

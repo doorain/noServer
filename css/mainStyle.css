@@ -1,0 +1,238 @@
+@import 'https://fonts.googleapis.com/css?family=Passion+One';
+
+
+#body {
+background-image: url('https://hd.unsplash.com/photo-1443706340763-4b60757a36ce');
+background-repeat:no-repeat;
+-webkit-background-size:cover;
+-moz-background-size:cover;
+-o-background-size:cover;
+background-size:cover;
+background-position:center;
+height: 100vh;
+font-family: 'Passion One', cursive;
+
+}
+.bubble{
+  background: rgba(50,50,50,0.4);
+  border-radius: 20px;
+
+}
+.input{
+  font-size: 4vw;
+  height:4vh;
+  border-radius: 20px;
+  text-align: center;
+}
+.header-wrapper {
+  margin-top: 5%;
+  margin-right: 5%;
+  margin-bottom: 1%;
+  margin-left: 5%;
+  height: 15vh;
+
+}
+.welcome {
+  font-size: 15vw;
+  text-align: left;
+  padding-left: 5%;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+
+}
+.menu {
+  position: relative;
+  top: -18%;
+
+}
+.ham {
+  height: 63px;
+  float: right;
+  margin-right: 5%;
+
+
+}
+.name-wrapper {
+  height: 60vh;
+  width: 49vw;
+  float: left;
+  margin-left: 5%;
+
+}
+.player{
+  background: rgba(250,250,250,0.4);
+  height: 4vh;
+  width: 96%;
+  margin-top: 26%;
+  margin-left: 2%;
+  font-size: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.player-section {
+  display: flex;
+  height: 75%;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.p {
+  background: rgba(250,250,250,0.4);
+  height: 6vh;
+  width: 32vw;
+  margin: 2%;
+  font-size: 2.5vw;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player-input{
+  width: 29vw;
+}
+.b {
+  width: 11vw;
+
+}
+.score-section{
+  height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+.score-input {
+  width: 8vw;
+  font-family: 'Passion One', cursive;
+}
+.input-wrapper{
+  height: 6vh;
+  width: 40vw;
+  float: right;
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.gcinput {
+  font-size: 3vw;
+  width: 37vw;
+
+}
+.total-wrapper{
+
+}
+.total {
+  height: 53.5vh;
+  width: 40vw;
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.total-section{
+  height: 82%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.score-total {
+  width: 8vw;
+  height:4vh;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(250,250,250,0.9);
+  font-size: 4vh;
+
+}
+.button-wrapper {
+  margin-left: 5%;
+  margin-top: 1%;
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+
+}
+.button{
+  font-size: 4vw;
+  height:7vh;
+  border-radius: 20px;
+  text-align: center;
+  background: rgba(250,250,250,0.4);
+  width: 75vw;
+  margin: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-button{
+    font-size: 8vw;
+    height:5vh;
+    border-radius: 20px;
+    text-align: center;
+    width: 21vh;
+    font-family: 'Passion One', cursive;
+}
+.player-wrapper{
+  height: 30vh;
+  margin: 5%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.player-total {
+  height: 10vh;
+  width: 90%;
+  background: rgba(250,250,250,0.4);
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-total-score {
+  height: 15vh;
+  width: 30%;
+  background: rgba(250,250,250,0.4);
+  margin-top: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.player-score {
+  width: 90%;
+  height:90%;
+  border-radius: 20px;
+  background: rgba(250,250,250,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18vw;
+}
+.player-name {
+  width: 90%;
+  height:90%;
+  border-radius: 20px;
+  background: rgba(250,250,250,0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10vw;
+}
