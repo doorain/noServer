@@ -1,5 +1,6 @@
 angular.module("scoreCard").directive("mainDirective", function() {
     return {
-        template : "hello"
-    };
+      restrict: "E",
+      templateUrl : "./playerTmpl.html"
+    }
 });

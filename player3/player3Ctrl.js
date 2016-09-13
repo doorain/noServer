@@ -1,4 +1,4 @@
-angular.module('scoreCard').controller('player3Ctrl', function($scope){
-  $scope.test = 'Player 3 test';
-
+angular.module('scoreCard').controller('player3Ctrl', function($scope, service){
+  $scope.name = service.getPlayer(2).name;
+  $scope.score = service.playerScores3();
 })

@@ -12,12 +12,26 @@
         Score Card
       </div>
       <div class="menu">
-        <img class="ham" src="./image/ham.png" alt="" />
+      <div class="dropdown">
+        <button class="dropbtn">MENU</button>
+          <div class="dropdown-content">
+            <a ui-sref="home">Home</a>
+            <a ui-sref="player1">Player 1</a>
+            <a ui-sref="player2">Player 2</a>
+            <a ui-sref="player3">Player 3</a>
+            <a ui-sref="player4">Player 4</a>
+          </div>
+        </div>
+
+        <!-- <img class="ham" src="./image/ham.png" alt="" /> -->
       </div>
     </header>
 
 
         <ui-view></ui-view>
+
+        <index-directive></index-directive>
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
@@ -25,6 +39,9 @@
     <script src="./apps.js" charset="utf-8"></script>
     <script src="./home/homeCtrl.js" charset="utf-8"></script>
     <script src="./directive.js" charset="utf-8"></script>
+    <script src="./indexDirective.js" charset="utf-8"></script>
+    <script src="./service.js" charset="utf-8"></script>
+    <script src="./indexCtrl.js" charset="utf-8"></script>
     <script src="./player1/player1Ctrl.js" charset="utf-8"></script>
     <script src="./player2/player2Ctrl.js" charset="utf-8"></script>
     <script src="./player3/player3Ctrl.js" charset="utf-8"></script>

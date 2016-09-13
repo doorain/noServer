@@ -4,18 +4,18 @@
   <div class="player bubble">Enter Players</div>
     <div class="player-section">
 
-      <div class="p bubble"><input class="player-input input" type="text" name="name" placeholder='Enter Player 1' /></div>
-      <div class="p bubble"><input class="player-input input" type="text" name="name" placeholder='Enter Player 2' /></div>
-      <div class="p bubble"><input class="player-input input" type="text" name="name" placeholder='Enter Player 3' /></div>
-      <div class="p bubble"><input class="player-input input" type="text" name="name" placeholder='Enter Player 4' /></div>
+      <div class="p bubble"><input ng-model="player1.name" ng-change="updatePlayer1(player1.name)" class="player-input input" type="text" name="name" placeholder={{name1}} /></div>
+      <div class="p bubble"><input ng-model="player2.name" ng-change="updatePlayer2(player2.name)"class="player-input input" type="text" name="name" placeholder={{name2}} /></div>
+      <div class="p bubble"><input ng-model="player3.name" ng-change="updatePlayer3(player3.name)"class="player-input input" type="text" name="name" placeholder={{name3}} /></div>
+      <div class="p bubble"><input ng-model="player4.name" ng-change="updatePlayer4(player4.name)"class="player-input input" type="text" name="name" placeholder={{name4}} /></div>
 
     <div class="score-section">
 
 
-      <div class="p bubble b"><input class="score-input input" type="text" name="name"></div>
-      <div class="p bubble b"><input class="score-input input" type="text" name="name"></div>
-      <div class="p bubble b"><input class="score-input input" type="text" name="name"></div>
-      <div class="p bubble b"><input class="score-input input"type="text" name="name"></div>
+      <div class="p bubble b"><input ng-model="player1.score" class="score-input input" type="text" name="name"></div>
+      <div class="p bubble b"><input ng-model="player2.score" class="score-input input" type="text" name="name"></div>
+      <div class="p bubble b"><input ng-model="player3.score" class="score-input input" type="text" name="name"></div>
+      <div class="p bubble b"><input ng-model="player4.score" class="score-input input"type="text" name="name"></div>
   </div>
 
     </div>
@@ -29,17 +29,17 @@
 
     <div class="total bubble">
       <div class="total-section">
-        <div class="p bubble b"><div class="score-total"></div></div>
-        <div class="p bubble b"><div class="score-total"></div></div>
-        <div class="p bubble b"><div class="score-total"></div></div>
-        <div class="p bubble b"><div class="score-total"></div></div>
+        <div class="p bubble b"><div class="score-total">{{player1score}}</div></div>
+        <div class="p bubble b"><div class="score-total">{{player2score}}</div></div>
+        <div class="p bubble b"><div class="score-total">{{player3score}}</div></div>
+        <div class="p bubble b"><div class="score-total">{{player4score}}</div></div>
       </div>
     </div>
 
     <div class="button-wrapper bubble">
       <div class="button bubble"><button class="input-button" type="button" name="name">LAST HOLE</button></div>
-      <div class="button bubble"><button class="input-button" type="button" name="name">NEXT HOLE</button></div>
-
+      <div class="button bubble"><button ng-click="nextHole(player1, player2, player3, player4); getHoleNumber()" getHoleNumber='getHoleNumber'  class="input-button" type="button" name="name">NEXT HOLE</button></div>
     </div>
+
 
 </section>
