@@ -51,11 +51,10 @@ this.playerScores4 = function(scores){
 var hole = 1;
 
 this.getHoleNumber = function(){
-  hole = hole++;
   return hole;
 }
 this.nextHole = function(){
-  return hole;
+  return hole++;
 }
 
 })
